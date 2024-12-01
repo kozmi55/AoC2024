@@ -33,5 +33,6 @@ bin/
 ### Mac OS ###
 .DS_Store
 
-### Local Constants ###
+### Local Constants & inputs ###
 src/LocalConstants.kt
+inputs/**
