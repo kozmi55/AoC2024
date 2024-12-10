@@ -99,8 +99,3 @@ fun day08part2() {
 
     println(antinodes.size)
 }
-
-data class Point(val x: Int, val y: Int) {
-    operator fun minus(other: Point) = Point(x - other.x, y - other.y)
-    fun isInBounds(corner: Point) = x >= 0 && x <= corner.x && y >= 0 && y <= corner.y
-}
