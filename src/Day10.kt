@@ -2,7 +2,7 @@ import java.io.File
 import java.io.InputStream
 import java.util.*
 
-fun day10part1() {
+fun day10part1() = runMeasured {
     val inputStream: InputStream = File("${INPUT_PATH}input10.txt").inputStream()
 
     val lineList = inputStream.bufferedReader().readLines()
@@ -47,7 +47,7 @@ fun day10part1() {
     println(result)
 }
 
-fun day10part2() {
+fun day10part2() = runMeasured {
     val inputStream: InputStream = File("${INPUT_PATH}input10.txt").inputStream()
 
     val lineList = inputStream.bufferedReader().readLines()
