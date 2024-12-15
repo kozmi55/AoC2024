@@ -7,6 +7,10 @@ data class Point(val x: Int, val y: Int) {
     fun isInBounds(corner: Point) = x >= 0 && x <= corner.x && y >= 0 && y <= corner.y
 }
 
+data class PointLong(val x: Long, val y: Long) {
+    operator fun plus(other: PointLong) = PointLong(x + other.x, y + other.y)
+}
+
 fun <T> runMeasured(block: () -> T) {
     val (_: T, duration: Duration) = measureTimedValue {
         block()
