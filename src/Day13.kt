@@ -1,7 +1,7 @@
 import java.io.File
 import java.io.InputStream
 
-fun day13part1() {
+fun day13part1() = runMeasured {
     val inputStream: InputStream = File("${INPUT_PATH}input13.txt").inputStream()
 
     val lineList = inputStream.bufferedReader().readLines()
@@ -55,7 +55,7 @@ private fun extractCoordinatesForPrize(input: String): PointLong {
     return PointLong(x, y)
 }
 
-fun day13part2() {
+fun day13part2() = runMeasured{
     val inputStream: InputStream = File("${INPUT_PATH}input13.txt").inputStream()
 
     val lineList = inputStream.bufferedReader().readLines()
