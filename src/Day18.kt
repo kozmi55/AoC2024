@@ -59,7 +59,6 @@ fun day18part2() = runMeasured {
 
     while (escapePossible) {
         currentlyBlockedPoints = blockedPoints.take(time)
-        println(time)
 
         val pointsToVisit = ArrayDeque(listOf(startPos))
         val visitedPoints = mutableMapOf(Point(0, 0) to 0)
